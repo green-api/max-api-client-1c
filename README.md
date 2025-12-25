@@ -110,8 +110,8 @@ API мессенджера MAX лучше подходит для серверн
 1. [Скачать обработку](https://github.com/green-api/max-1c-example/releases/download/0.0.9/GreenAPI-MAX.epf) в формате epf  
 2. Подключиться к сервису через встроенный в обработку помощник или  самостоятельно через сайт [green-api.com](https://green-api.com/). Получить ``API Token`` и ``ID Instance``  
 3. В разделе «Настройки → Подключение» укажите:  
-  * apiUrl - api.green-api.com  
-  * mediaUrl - media.green-api.com  
+  * host - api.green-api.com  
+  * hostMedia - media.green-api.com  
   * idInstance - ID вашего инстанса  
   * apiTokenInstance - API Token  
 4. Сканировать QR-код с мобильного телефона MAX  
@@ -277,7 +277,7 @@ API мессенджера MAX лучше подходит для серверн
 АПИ = Обработки.GreenAPI.Создать();
 АПИ.IdInstance = "ВАШ_ИНСТАНС";
 АПИ.ApiToken = "ВАШ_ТОКЕН";
-Ответ = АПИ.ОтправитьТекстВГруппу("-10000000000000", "Я использую GREEN-API для отправки этого сообщения!"); 
+Ответ = АПИ.ОтправитьТекст("-10000000000000", "Я использую GREEN-API для отправки этого сообщения!"); 
 ```
 
 ## Установка обработки из исходников  
