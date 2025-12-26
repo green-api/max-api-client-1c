@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
 	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
@@ -45,6 +48,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="885"/>
 					<ExtendedTooltip name="ОписаниеОшибкиРасширеннаяПодсказка" id="886"/>
+					<SelectedItemsActionsPanel name="ОписаниеОшибкиПанельДействийВыделенныхСтрок" id="1320"/>
 				</InputField>
 				<LabelDecoration name="ДекорацияЗакрытьОшибки" id="887">
 					<Title formatted="false">
@@ -77,6 +81,7 @@
 					<v8:content>Шапка</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>#4FAD4F</BackColor>
@@ -176,6 +181,8 @@
 											<v8:content>Настройки</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="15"/>
 									<ChildItems>
 										<Pages name="ДеталиНастроек" id="16">
@@ -207,6 +214,8 @@
 															<v8:content>Настройки внешние</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Group>Vertical</Group>
+													<ScrollOnCompress>false</ScrollOnCompress>
 													<ExtendedTooltip name="НастройкиВнешниеРасширеннаяПодсказка" id="19"/>
 													<ChildItems>
 														<LabelDecoration name="ОписаниеНачало" id="20">
@@ -313,6 +322,7 @@
 																			</Title>
 																			<ContextMenu name="apiUrl_ПодключениеКонтекстноеМеню" id="36"/>
 																			<ExtendedTooltip name="apiUrl_ПодключениеРасширеннаяПодсказка" id="37"/>
+																			<SelectedItemsActionsPanel name="apiUrl_ПодключениеПанельДействийВыделенныхСтрок" id="1321"/>
 																			<Events>
 																				<Event name="TextEditEnd">apiUrlОкончаниеВводаТекста</Event>
 																			</Events>
@@ -337,6 +347,7 @@
 																	</Title>
 																	<ContextMenu name="mediaUrl_ПодключениеКонтекстноеМеню" id="41"/>
 																	<ExtendedTooltip name="mediaUrl_ПодключениеРасширеннаяПодсказка" id="42"/>
+																	<SelectedItemsActionsPanel name="mediaUrl_ПодключениеПанельДействийВыделенныхСтрок" id="1322"/>
 																	<Events>
 																		<Event name="TextEditEnd">mediaUrlОкончаниеВводаТекста</Event>
 																	</Events>
@@ -360,6 +371,7 @@
 																	</InputHint>
 																	<ContextMenu name="IdInstanceКонтекстноеМеню" id="44"/>
 																	<ExtendedTooltip name="IdInstanceРасширеннаяПодсказка" id="45"/>
+																	<SelectedItemsActionsPanel name="IdInstanceПанельДействийВыделенныхСтрок" id="1323"/>
 																	<Events>
 																		<Event name="OnChange">IdInstanceПриИзменении</Event>
 																	</Events>
@@ -383,6 +395,7 @@
 																	</InputHint>
 																	<ContextMenu name="ApiTokenКонтекстноеМеню" id="47"/>
 																	<ExtendedTooltip name="ApiTokenРасширеннаяПодсказка" id="48"/>
+																	<SelectedItemsActionsPanel name="ApiTokenПанельДействийВыделенныхСтрок" id="1324"/>
 																	<Events>
 																		<Event name="OnChange">ApiTokenПриИзменении</Event>
 																	</Events>
@@ -429,6 +442,7 @@
 																	<v8:content>Группа QRКод главный</v8:content>
 																</v8:item>
 															</ToolTip>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаQRКодГлавныйРасширеннаяПодсказка" id="1316"/>
@@ -444,6 +458,7 @@
 																	<VerticalStretch>false</VerticalStretch>
 																	<ContextMenu name="QRКодГлавныйКонтекстноеМеню" id="1313"/>
 																	<ExtendedTooltip name="QRКодГлавныйРасширеннаяПодсказка" id="1314"/>
+																	<SelectedItemsActionsPanel name="QRКодГлавныйПанельДействийВыделенныхСтрок" id="1325"/>
 																</HTMLDocumentField>
 																<LabelDecoration name="ДекорацияЗакрытьQRглавный" id="1317">
 																	<Title formatted="false">
@@ -478,6 +493,8 @@
 															<v8:content>Настройки входящих уведомлений</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Group>Vertical</Group>
+													<ScrollOnCompress>false</ScrollOnCompress>
 													<ExtendedTooltip name="НастройкиВходящихУведомленийРасширеннаяПодсказка" id="55"/>
 													<ChildItems>
 														<UsualGroup name="ГруппаПолучатьВходящиеУведомления" id="56">
@@ -507,6 +524,7 @@
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="Параметр_webhookUrlКонтекстноеМеню" id="1065"/>
 																	<ExtendedTooltip name="Параметр_webhookUrlРасширеннаяПодсказка" id="1066"/>
+																	<SelectedItemsActionsPanel name="Параметр_webhookUrlПанельДействийВыделенныхСтрок" id="1326"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииНастройкиAPI</Event>
 																	</Events>
@@ -623,6 +641,7 @@
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ПолучатьВходящиеСообщенияИФайлыКонтекстноеМеню" id="76"/>
 																	<ExtendedTooltip name="ПолучатьВходящиеСообщенияИФайлыРасширеннаяПодсказка" id="77"/>
+																	<SelectedItemsActionsPanel name="ПолучатьВходящиеСообщенияИФайлыПанельДействийВыделенныхСтрок" id="1327"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииНастройкиAPI</Event>
 																	</Events>
@@ -633,6 +652,7 @@
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ПолучатьУведомленииОСостоянииТелефонаКонтекстноеМеню" id="82"/>
 																	<ExtendedTooltip name="ПолучатьУведомленииОСостоянииТелефонаРасширеннаяПодсказка" id="83"/>
+																	<SelectedItemsActionsPanel name="ПолучатьУведомленииОСостоянииТелефонаПанельДействийВыделенныхСтрок" id="1328"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииНастройкиAPI</Event>
 																	</Events>
@@ -643,6 +663,7 @@
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ПолучатьУведомленияОСостоянииАккаунтаКонтекстноеМеню" id="85"/>
 																	<ExtendedTooltip name="ПолучатьУведомленияОСостоянииАккаунтаРасширеннаяПодсказка" id="86"/>
+																	<SelectedItemsActionsPanel name="ПолучатьУведомленияОСостоянииАккаунтаПанельДействийВыделенныхСтрок" id="1329"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииНастройкиAPI</Event>
 																	</Events>
@@ -675,10 +696,13 @@
 															<v8:content>Прочие настройки</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Group>Vertical</Group>
+													<ScrollOnCompress>false</ScrollOnCompress>
 													<ExtendedTooltip name="ПрочиеНастройкиРасширеннаяПодсказка" id="91"/>
 													<ChildItems>
 														<UsualGroup name="Группа2" id="92">
 															<HorizontalStretch>true</HorizontalStretch>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<BackColor>style:ToolTipBackColor</BackColor>
@@ -701,6 +725,7 @@
 																			</v8:item>
 																		</Title>
 																	</ExtendedTooltip>
+																	<SelectedItemsActionsPanel name="ОтмечатьВходящиеСообщенияПрочитаннымиПанельДействийВыделенныхСтрок" id="1330"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииНастройкиAPI</Event>
 																	</Events>
@@ -726,6 +751,7 @@
 																			</v8:item>
 																		</Title>
 																	</ExtendedTooltip>
+																	<SelectedItemsActionsPanel name="ИнтервалОтправкиСообщенийПанельДействийВыделенныхСтрок" id="1331"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииНастройкиAPI</Event>
 																	</Events>
@@ -784,6 +810,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="АккаунтРасширеннаяПодсказка" id="109"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаЗапросы" id="110">
@@ -821,6 +848,7 @@
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
 													<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
+													<Representation>WeakSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<BackColor>style:ToolTipBackColor</BackColor>
 													<ExtendedTooltip name="ГруппаПараметрыАккаунтаРасширеннаяПодсказка" id="1020"/>
@@ -845,6 +873,7 @@
 															</EditFormat>
 															<ContextMenu name="Параметр_phoneNumberАккаунтаКонтекстноеМеню" id="1022"/>
 															<ExtendedTooltip name="Параметр_phoneNumberАккаунтаРасширеннаяПодсказка" id="1023"/>
+															<SelectedItemsActionsPanel name="Параметр_phoneNumberАккаунтаПанельДействийВыделенныхСтрок" id="1332"/>
 														</InputField>
 														<InputField name="Параметр_code" id="1013">
 															<DataPath>Параметр_code</DataPath>
@@ -858,6 +887,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_codeКонтекстноеМеню" id="1014"/>
 															<ExtendedTooltip name="Параметр_codeРасширеннаяПодсказка" id="1015"/>
+															<SelectedItemsActionsPanel name="Параметр_codeПанельДействийВыделенныхСтрок" id="1333"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -905,6 +935,7 @@
 															<VerticalStretch>false</VerticalStretch>
 															<ContextMenu name="QRКодКонтекстноеМеню" id="1310"/>
 															<ExtendedTooltip name="QRКодРасширеннаяПодсказка" id="1311"/>
+															<SelectedItemsActionsPanel name="QRКодПанельДействийВыделенныхСтрок" id="1334"/>
 														</HTMLDocumentField>
 													</ChildItems>
 												</UsualGroup>
@@ -1009,6 +1040,8 @@
 													<v8:content>Группа аккаунт ответ</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаАккаунтОтветРасширеннаяПодсказка" id="143"/>
 											<ChildItems>
 												<InputField name="КонсольАккаунт" id="144">
@@ -1026,6 +1059,7 @@
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="КонсольАккаунтКонтекстноеМеню" id="145"/>
 													<ExtendedTooltip name="КонсольАккаунтРасширеннаяПодсказка" id="146"/>
+													<SelectedItemsActionsPanel name="КонсольАккаунтПанельДействийВыделенныхСтрок" id="1335"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -1216,6 +1250,8 @@
 											<v8:content>Отправка сообщений</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ОтправкаСообщенийРасширеннаяПодсказка" id="177"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаОтправка" id="178">
@@ -1245,6 +1281,7 @@
 													</Title>
 													<Width>30</Width>
 													<Group>Vertical</Group>
+													<Representation>WeakSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОтправкаТипЧатаРасширеннаяПодсказка" id="181"/>
 													<ChildItems>
@@ -1252,6 +1289,7 @@
 															<HorizontalStretch>true</HorizontalStretch>
 															<Group>Vertical</Group>
 															<ChildrenAlign>None</ChildrenAlign>
+															<Representation>WeakSeparation</Representation>
 															<ShowTitle>false</ShowTitle>
 															<BackColor>style:ToolTipBackColor</BackColor>
 															<ExtendedTooltip name="ГруппаТипЧатаРасширеннаяПодсказка" id="183"/>
@@ -1296,6 +1334,7 @@
 																			</ChoiceList>
 																			<ContextMenu name="ПереключательТипаЧатаКонтекстноеМеню" id="185"/>
 																			<ExtendedTooltip name="ПереключательТипаЧатаРасширеннаяПодсказка" id="186"/>
+																			<SelectedItemsActionsPanel name="ПереключательТипаЧатаПанельДействийВыделенныхСтрок" id="1336"/>
 																			<Events>
 																				<Event name="OnChange">ПереключательТипаЧатаПриИзменении</Event>
 																			</Events>
@@ -1355,6 +1394,7 @@
 																			<EditTextUpdate>OnValueChange</EditTextUpdate>
 																			<ContextMenu name="ИдЧатаКонтекстноеМеню" id="195"/>
 																			<ExtendedTooltip name="ИдЧатаРасширеннаяПодсказка" id="196"/>
+																			<SelectedItemsActionsPanel name="ИдЧатаПанельДействийВыделенныхСтрок" id="1337"/>
 																			<Events>
 																				<Event name="OnChange">ПриИзмененииIDЧата</Event>
 																			</Events>
@@ -1365,6 +1405,7 @@
 																			<HorizontalStretch>true</HorizontalStretch>
 																			<ContextMenu name="ОтправкаТекстСообщенияКонтекстноеМеню" id="211"/>
 																			<ExtendedTooltip name="ОтправкаТекстСообщенияРасширеннаяПодсказка" id="212"/>
+																			<SelectedItemsActionsPanel name="ОтправкаТекстСообщенияПанельДействийВыделенныхСтрок" id="1338"/>
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
@@ -1484,6 +1525,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
+													<Representation>WeakSeparation</Representation>
 													<ExtendedTooltip name="ГруппаОтправкаОтветРасширеннаяПодсказка" id="247"/>
 													<ChildItems>
 														<InputField name="КонсольОтправка" id="248">
@@ -1496,6 +1538,7 @@
 															<EditTextUpdate>OnValueChange</EditTextUpdate>
 															<ContextMenu name="КонсольОтправкаКонтекстноеМеню" id="249"/>
 															<ExtendedTooltip name="КонсольОтправкаРасширеннаяПодсказка" id="250"/>
+															<SelectedItemsActionsPanel name="КонсольОтправкаПанельДействийВыделенныхСтрок" id="1339"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -1668,6 +1711,8 @@
 											<v8:content>Получение сообщений</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ПолучениеСообщенийРасширеннаяПодсказка" id="281"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаНестандартныеНастройки" id="282">
@@ -1819,6 +1864,7 @@
 																			<TextColor>#0000FF</TextColor>
 																			<ContextMenu name="СтатусПолученияВсехСообщенийКонтекстноеМеню" id="311"/>
 																			<ExtendedTooltip name="СтатусПолученияВсехСообщенийРасширеннаяПодсказка" id="312"/>
+																			<SelectedItemsActionsPanel name="СтатусПолученияВсехСообщенийПанельДействийВыделенныхСтрок" id="1340"/>
 																		</LabelField>
 																	</ChildItems>
 																</UsualGroup>
@@ -1845,6 +1891,7 @@
 																	<DataPath>Параметр_chatId</DataPath>
 																	<ContextMenu name="ПараметрИдЧата7КонтекстноеМеню" id="316"/>
 																	<ExtendedTooltip name="ПараметрИдЧата7РасширеннаяПодсказка" id="317"/>
+																	<SelectedItemsActionsPanel name="ПараметрИдЧата7ПанельДействийВыделенныхСтрок" id="1341"/>
 																	<Events>
 																		<Event name="OnChange">ПриИзмененииIDЧата</Event>
 																	</Events>
@@ -1853,6 +1900,7 @@
 																	<DataPath>Параметр_idMessage</DataPath>
 																	<ContextMenu name="ПараметрИдСообщения3КонтекстноеМеню" id="319"/>
 																	<ExtendedTooltip name="ПараметрИдСообщения3РасширеннаяПодсказка" id="320"/>
+																	<SelectedItemsActionsPanel name="ПараметрИдСообщения3ПанельДействийВыделенныхСтрок" id="1342"/>
 																</InputField>
 																<Button name="СкачатьФайлИзСообщения" id="321">
 																	<Type>UsualButton</Type>
@@ -1886,6 +1934,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
+													<Representation>WeakSeparation</Representation>
 													<ExtendedTooltip name="ГруппаРезультатыСообщенияРасширеннаяПодсказка" id="324"/>
 													<ChildItems>
 														<InputField name="ПолученФайл" id="325">
@@ -1902,6 +1951,7 @@
 															<OpenButton>true</OpenButton>
 															<ContextMenu name="ПолученФайлКонтекстноеМеню" id="326"/>
 															<ExtendedTooltip name="ПолученФайлРасширеннаяПодсказка" id="327"/>
+															<SelectedItemsActionsPanel name="ПолученФайлПанельДействийВыделенныхСтрок" id="1343"/>
 															<Events>
 																<Event name="StartChoice">ПолученФайлНачалоВыбора</Event>
 																<Event name="Opening">ПолученФайлОткрытие</Event>
@@ -1919,6 +1969,7 @@
 															<MultiLine>true</MultiLine>
 															<ContextMenu name="ТекстПолученноеСообщениеКонтекстноеМеню" id="329"/>
 															<ExtendedTooltip name="ТекстПолученноеСообщениеРасширеннаяПодсказка" id="330"/>
+															<SelectedItemsActionsPanel name="ТекстПолученноеСообщениеПанельДействийВыделенныхСтрок" id="1344"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2052,6 +2103,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ЖурналыРасширеннаяПодсказка" id="352"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаЖурналыКоманды" id="353">
@@ -2104,6 +2156,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="ИнтервалКонтекстноеМеню" id="1106"/>
 															<ExtendedTooltip name="ИнтервалРасширеннаяПодсказка" id="1107"/>
+															<SelectedItemsActionsPanel name="ИнтервалПанельДействийВыделенныхСтрок" id="1345"/>
 														</InputField>
 														<Button name="ПолучитьЖурналВходящихСообщений" id="1101">
 															<Type>UsualButton</Type>
@@ -2141,6 +2194,7 @@
 															<EditTextUpdate>OnValueChange</EditTextUpdate>
 															<ContextMenu name="ИдЧатаЖурналаКонтекстноеМеню" id="947"/>
 															<ExtendedTooltip name="ИдЧатаЖурналаРасширеннаяПодсказка" id="948"/>
+															<SelectedItemsActionsPanel name="ИдЧатаЖурналаПанельДействийВыделенныхСтрок" id="1346"/>
 															<Events>
 																<Event name="OnChange">ПриИзмененииIDЧата</Event>
 															</Events>
@@ -2152,6 +2206,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="КоличествоСообщенийКонтекстноеМеню" id="1109"/>
 															<ExtendedTooltip name="КоличествоСообщенийРасширеннаяПодсказка" id="1110"/>
+															<SelectedItemsActionsPanel name="КоличествоСообщенийПанельДействийВыделенныхСтрок" id="1347"/>
 														</InputField>
 														<Button name="ПолучитьИсториюСообщенияЧата" id="1097">
 															<Type>UsualButton</Type>
@@ -2166,6 +2221,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_idMessage2КонтекстноеМеню" id="1112"/>
 															<ExtendedTooltip name="Параметр_idMessage2РасширеннаяПодсказка" id="1113"/>
+															<SelectedItemsActionsPanel name="Параметр_idMessage2ПанельДействийВыделенныхСтрок" id="1348"/>
 														</InputField>
 														<Button name="ПолучитьСообщениеЧата" id="1099">
 															<Type>UsualButton</Type>
@@ -2192,6 +2248,8 @@
 													<v8:content>Группа консоль журналы</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаКонсольЖурналыРасширеннаяПодсказка" id="385"/>
 											<ChildItems>
 												<InputField name="КонсольЖурналы" id="386">
@@ -2207,6 +2265,7 @@
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="КонсольЖурналыКонтекстноеМеню" id="387"/>
 													<ExtendedTooltip name="КонсольЖурналыРасширеннаяПодсказка" id="388"/>
+													<SelectedItemsActionsPanel name="КонсольЖурналыПанельДействийВыделенныхСтрок" id="1349"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -2338,6 +2397,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ОчередиРасширеннаяПодсказка" id="407"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаОчередиЗапросы" id="408">
@@ -2414,6 +2474,8 @@
 													<v8:content>Группа консоль очереди</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаКонсольОчередиРасширеннаяПодсказка" id="415"/>
 											<ChildItems>
 												<InputField name="КонсольОчереди" id="416">
@@ -2423,6 +2485,7 @@
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="КонсольОчередиКонтекстноеМеню" id="417"/>
 													<ExtendedTooltip name="КонсольОчередиРасширеннаяПодсказка" id="418"/>
+													<SelectedItemsActionsPanel name="КонсольОчередиПанельДействийВыделенныхСтрок" id="1350"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -2574,6 +2637,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ГруппыРасширеннаяПодсказка" id="431"/>
 									<ChildItems>
 										<UsualGroup name="ГруппыЗапросы" id="432">
@@ -2611,6 +2675,7 @@
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
 													<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
+													<Representation>WeakSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="984"/>
 													<ChildItems>
@@ -2625,6 +2690,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_groupNameКонтекстноеМеню" id="1002"/>
 															<ExtendedTooltip name="Параметр_groupNameРасширеннаяПодсказка" id="1003"/>
+															<SelectedItemsActionsPanel name="Параметр_groupNameПанельДействийВыделенныхСтрок" id="1351"/>
 														</InputField>
 														<InputField name="Параметр_chatIds" id="1010">
 															<DataPath>Параметр_chatIds</DataPath>
@@ -2638,6 +2704,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_chatIdsКонтекстноеМеню" id="1011"/>
 															<ExtendedTooltip name="Параметр_chatIdsРасширеннаяПодсказка" id="1012"/>
+															<SelectedItemsActionsPanel name="Параметр_chatIdsПанельДействийВыделенныхСтрок" id="1352"/>
 														</InputField>
 														<Button name="СоздатьГруппу" id="1124">
 															<Type>UsualButton</Type>
@@ -2658,6 +2725,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_chatIdКонтекстноеМеню" id="1005"/>
 															<ExtendedTooltip name="Параметр_chatIdРасширеннаяПодсказка" id="1006"/>
+															<SelectedItemsActionsPanel name="Параметр_chatIdПанельДействийВыделенныхСтрок" id="1353"/>
 														</InputField>
 														<UsualGroup name="Группа3" id="1300">
 															<Group>AlwaysHorizontal</Group>
@@ -2696,6 +2764,7 @@
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_participantChatIdКонтекстноеМеню" id="1008"/>
 															<ExtendedTooltip name="Параметр_participantChatIdРасширеннаяПодсказка" id="1009"/>
+															<SelectedItemsActionsPanel name="Параметр_participantChatIdПанельДействийВыделенныхСтрок" id="1354"/>
 														</InputField>
 														<Button name="ДобавитьУчастникаВГруппу" id="1130">
 															<Type>UsualButton</Type>
@@ -2754,6 +2823,8 @@
 													<v8:content>Группа консоль группы</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаКонсольГруппыРасширеннаяПодсказка" id="493"/>
 											<ChildItems>
 												<InputField name="КонсольГруппы" id="494">
@@ -2763,6 +2834,7 @@
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="КонсольГруппыКонтекстноеМеню" id="495"/>
 													<ExtendedTooltip name="КонсольГруппыРасширеннаяПодсказка" id="496"/>
+													<SelectedItemsActionsPanel name="КонсольГруппыПанельДействийВыделенныхСтрок" id="1355"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -3014,6 +3086,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ОтметкаПрочтенияРасширеннаяПодсказка" id="649"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаОтметкаПрочтенияЗапросы" id="650">
@@ -3064,6 +3137,7 @@
 															<HorizontalStretch>true</HorizontalStretch>
 															<Group>Vertical</Group>
 															<ChildrenAlign>None</ChildrenAlign>
+															<Representation>WeakSeparation</Representation>
 															<ShowTitle>false</ShowTitle>
 															<BackColor>style:ToolTipBackColor</BackColor>
 															<ExtendedTooltip name="ГруппаТипЧатаСервисные1РасширеннаяПодсказка" id="958"/>
@@ -3108,6 +3182,7 @@
 																			</ChoiceList>
 																			<ContextMenu name="ПереключательТипаЧатаСервисные1КонтекстноеМеню" id="962"/>
 																			<ExtendedTooltip name="ПереключательТипаЧатаСервисные1РасширеннаяПодсказка" id="963"/>
+																			<SelectedItemsActionsPanel name="ПереключательТипаЧатаСервисные1ПанельДействийВыделенныхСтрок" id="1356"/>
 																			<Events>
 																				<Event name="OnChange">ПереключательТипаЧатаПриИзменении</Event>
 																			</Events>
@@ -3153,6 +3228,7 @@
 																			<EditTextUpdate>OnValueChange</EditTextUpdate>
 																			<ContextMenu name="ИдЧатаОтметкаКонтекстноеМеню" id="970"/>
 																			<ExtendedTooltip name="ИдЧатаОтметкаРасширеннаяПодсказка" id="971"/>
+																			<SelectedItemsActionsPanel name="ИдЧатаОтметкаПанельДействийВыделенныхСтрок" id="1357"/>
 																			<Events>
 																				<Event name="OnChange">ПриИзмененииIDЧата</Event>
 																			</Events>
@@ -3168,6 +3244,7 @@
 																			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																			<ContextMenu name="Параметр_idMessage1КонтекстноеМеню" id="979"/>
 																			<ExtendedTooltip name="Параметр_idMessage1РасширеннаяПодсказка" id="980"/>
+																			<SelectedItemsActionsPanel name="Параметр_idMessage1ПанельДействийВыделенныхСтрок" id="1358"/>
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
@@ -3230,6 +3307,8 @@
 													<v8:content>Группа консоль отметки прочтения</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаКонсольОтметкиПрочтенияРасширеннаяПодсказка" id="663"/>
 											<ChildItems>
 												<InputField name="КонсольОтметкиПрочтения" id="664">
@@ -3239,6 +3318,7 @@
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="КонсольОтметкиПрочтенияКонтекстноеМеню" id="665"/>
 													<ExtendedTooltip name="КонсольОтметкиПрочтенияРасширеннаяПодсказка" id="666"/>
+													<SelectedItemsActionsPanel name="КонсольОтметкиПрочтенияПанельДействийВыделенныхСтрок" id="1359"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -3310,6 +3390,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СервисныеМетодыРасширеннаяПодсказка" id="695"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаСервисныеМетодыЗапросы" id="696">
@@ -3347,6 +3428,7 @@
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
 													<ChildrenAlign>None</ChildrenAlign>
+													<Representation>WeakSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<BackColor>style:ToolTipBackColor</BackColor>
 													<ExtendedTooltip name="ГруппаТипЧатаСервисныеРасширеннаяПодсказка" id="904"/>
@@ -3391,6 +3473,7 @@
 																	</ChoiceList>
 																	<ContextMenu name="ПереключательТипаЧатаСервисныеКонтекстноеМеню" id="908"/>
 																	<ExtendedTooltip name="ПереключательТипаЧатаСервисныеРасширеннаяПодсказка" id="909"/>
+																	<SelectedItemsActionsPanel name="ПереключательТипаЧатаСервисныеПанельДействийВыделенныхСтрок" id="1360"/>
 																	<Events>
 																		<Event name="OnChange">ПереключательТипаЧатаПриИзменении</Event>
 																	</Events>
@@ -3436,6 +3519,7 @@
 																	</EditFormat>
 																	<ContextMenu name="Параметр_phoneNumberКонтекстноеМеню" id="925"/>
 																	<ExtendedTooltip name="Параметр_phoneNumberРасширеннаяПодсказка" id="926"/>
+																	<SelectedItemsActionsPanel name="Параметр_phoneNumberПанельДействийВыделенныхСтрок" id="1361"/>
 																</InputField>
 																<InputField name="ИдЧатаСервисные" id="915">
 																	<DataPath>Параметр_chatId</DataPath>
@@ -3457,6 +3541,7 @@
 																	<EditTextUpdate>OnValueChange</EditTextUpdate>
 																	<ContextMenu name="ИдЧатаСервисныеКонтекстноеМеню" id="916"/>
 																	<ExtendedTooltip name="ИдЧатаСервисныеРасширеннаяПодсказка" id="917"/>
+																	<SelectedItemsActionsPanel name="ИдЧатаСервисныеПанельДействийВыделенныхСтрок" id="1362"/>
 																</InputField>
 																<InputField name="Параметр_idMessage" id="927">
 																	<DataPath>Параметр_idMessage</DataPath>
@@ -3469,6 +3554,7 @@
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="Параметр_idMessageКонтекстноеМеню" id="928"/>
 																	<ExtendedTooltip name="Параметр_idMessageРасширеннаяПодсказка" id="929"/>
+																	<SelectedItemsActionsPanel name="Параметр_idMessageПанельДействийВыделенныхСтрок" id="1363"/>
 																</InputField>
 																<InputField name="ОтправкаТекстСообщенияСервисные" id="921">
 																	<DataPath>Параметр_message</DataPath>
@@ -3476,6 +3562,7 @@
 																	<HorizontalStretch>true</HorizontalStretch>
 																	<ContextMenu name="ОтправкаТекстСообщенияСервисныеКонтекстноеМеню" id="922"/>
 																	<ExtendedTooltip name="ОтправкаТекстСообщенияСервисныеРасширеннаяПодсказка" id="923"/>
+																	<SelectedItemsActionsPanel name="ОтправкаТекстСообщенияСервисныеПанельДействийВыделенныхСтрок" id="1364"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -3581,6 +3668,8 @@
 													<v8:content>Группа консоль сервисные методы</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаКонсольСервисныеМетодыРасширеннаяПодсказка" id="767"/>
 											<ChildItems>
 												<InputField name="КонсольСервисныеМетоды" id="768">
@@ -3590,6 +3679,7 @@
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="КонсольСервисныеМетодыКонтекстноеМеню" id="769"/>
 													<ExtendedTooltip name="КонсольСервисныеМетодыРасширеннаяПодсказка" id="770"/>
+													<SelectedItemsActionsPanel name="КонсольСервисныеМетодыПанельДействийВыделенныхСтрок" id="1365"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -3800,6 +3890,8 @@
 											<v8:content>Партнер</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="804"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаПоянениеПартнер" id="805">
@@ -3809,6 +3901,7 @@
 													<v8:content>Группа поянение партнер</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПоянениеПартнерРасширеннаяПодсказка" id="806"/>
@@ -3886,6 +3979,7 @@
 																</v8:item>
 															</ToolTip>
 															<HorizontalStretch>true</HorizontalStretch>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<BackColor>style:ToolTipBackColor</BackColor>
@@ -3897,6 +3991,7 @@
 																	<HorizontalStretch>true</HorizontalStretch>
 																	<ContextMenu name="PartnerTokenКонтекстноеМеню" id="817"/>
 																	<ExtendedTooltip name="PartnerTokenРасширеннаяПодсказка" id="818"/>
+																	<SelectedItemsActionsPanel name="PartnerTokenПанельДействийВыделенныхСтрок" id="1366"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -3913,6 +4008,7 @@
 																	<v8:content>Группа партнер команды</v8:content>
 																</v8:item>
 															</ToolTip>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>StrongSeparation</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПартнерКомандыРасширеннаяПодсказка" id="826"/>
@@ -3986,6 +4082,7 @@
 																	</InputHint>
 																	<ContextMenu name="ПараметрИдИнстансаКонтекстноеМеню" id="834"/>
 																	<ExtendedTooltip name="ПараметрИдИнстансаРасширеннаяПодсказка" id="835"/>
+																	<SelectedItemsActionsPanel name="ПараметрИдИнстансаПанельДействийВыделенныхСтрок" id="1367"/>
 																</InputField>
 																<Button name="УдалитьИнстанс" id="1158">
 																	<Type>UsualButton</Type>
@@ -4013,6 +4110,8 @@
 															<v8:content>Группа консоль сервисные методы</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Group>HorizontalIfPossible</Group>
+													<Representation>WeakSeparation</Representation>
 													<ExtendedTooltip name="ГруппаПартнерМетодыРасширеннаяПодсказка" id="839"/>
 													<ChildItems>
 														<InputField name="КонсольПартнер" id="840">
@@ -4022,6 +4121,7 @@
 															<MultiLine>true</MultiLine>
 															<ContextMenu name="КонсольПартнерКонтекстноеМеню" id="841"/>
 															<ExtendedTooltip name="КонсольПартнерРасширеннаяПодсказка" id="842"/>
+															<SelectedItemsActionsPanel name="КонсольПартнерПанельДействийВыделенныхСтрок" id="1368"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -4187,6 +4287,7 @@
 					<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 					<ContextMenu name="СтатусПроверкиКонтекстноеМеню" id="865"/>
 					<ExtendedTooltip name="СтатусПроверкиРасширеннаяПодсказка" id="866"/>
+					<SelectedItemsActionsPanel name="СтатусПроверкиПанельДействийВыделенныхСтрок" id="1369"/>
 				</LabelField>
 				<LabelDecoration name="ЛичныйКабинетGREENAPI" id="867">
 					<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
