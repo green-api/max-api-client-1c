@@ -76,7 +76,7 @@ API мессенджера MAX лучше подходит для серверн
 Авторизация выполняется на вкладке `Настройки` -> `Подключение` и завязана на кнопку `Получить состояние инстанса`.  
 
 Шаг 1. Запрос состояния инстанса  
-1. Заполните параметры подключения (`apiUrl`, `mediaUrl`, `idInstance`, `apiTokenInstance`).
+1. Заполните параметры подключения (`host`, `mediaHost`, `idInstance`, `apiTokenInstance`).
 2. Нажмите `Получить состояние инстанса`.  
 
 ![qr-authorization](./media/auth.png)  
@@ -107,7 +107,7 @@ API мессенджера MAX лучше подходит для серверн
 
 ### Подключение MAX в обработке  
 
-1. [Скачать обработку](https://github.com/green-api/max-1c-example/releases/download/0.0.9/GreenAPI-MAX.epf) в формате epf  
+1. [Скачать обработку](https://github.com/green-api/max-api-client-1c/releases/download/0.0.10/GreenAPI-MAX.epf) в формате epf  
 2. Подключиться к сервису через встроенный в обработку помощник или  самостоятельно через сайт [green-api.com](https://green-api.com/). Получить ``API Token`` и ``ID Instance``  
 3. В разделе «Настройки → Подключение» укажите:  
   * host - api.green-api.com  
