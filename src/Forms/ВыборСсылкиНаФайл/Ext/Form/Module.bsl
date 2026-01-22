@@ -9,7 +9,7 @@
 &НаСервере
 Процедура ЗаполнитьФормуВыбораСсылкиНаФайл()
 	
-	АдресФайла = "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/i/KuzZdQv6e7PidA";
+	АдресФайла = "https://green-api.com/max/_next/static/media/max-big-logo.191ead69.png";
 	ИмяФайла   = "GreenAPI.png"
 	
 КонецПроцедуры
