@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -42,7 +42,6 @@
 					<Width>50</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MultiLine>true</MultiLine>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="885"/>
 					<ExtendedTooltip name="ОписаниеОшибкиРасширеннаяПодсказка" id="886"/>
 				</InputField>
@@ -160,7 +159,6 @@
 									<v8:content>Разделы</v8:content>
 								</v8:item>
 							</ToolTip>
-							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="РазделыРасширеннаяПодсказка" id="13"/>
 							<ChildItems>
 								<Page name="Настройки" id="14">
@@ -191,7 +189,6 @@
 													<v8:content>Детали настроек</v8:content>
 												</v8:item>
 											</ToolTip>
-											<PagesRepresentation>TabsOnTop</PagesRepresentation>
 											<ExtendedTooltip name="ДеталиНастроекРасширеннаяПодсказка" id="17"/>
 											<ChildItems>
 												<Page name="НастройкиВнешние" id="18">
@@ -504,7 +501,6 @@
 																	<DataPath>Параметр_webhookUrl</DataPath>
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<ClearButton>true</ClearButton>
-																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="Параметр_webhookUrlКонтекстноеМеню" id="1065"/>
 																	<ExtendedTooltip name="Параметр_webhookUrlРасширеннаяПодсказка" id="1066"/>
 																	<Events>
@@ -516,7 +512,7 @@
 																	<Title formatted="true">
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>&lt;color #536ac2&gt;Входящие уведомления позволяют получать сообщения, изображения, видео, файлы, статусы ранее отправленных сообщений, а также информацию о состоянии аккаунта и телефона. Подробнее см. в документации для &lt;/&gt;&lt;link https://green-api.com/v3/docs/api/receiving/technology-http-api/&gt;HTTP&lt;/&gt;&lt;link https://green-api.com/docs/api/receiving/technology-http-api/&gt; API&lt;/&gt;&lt;color #536ac2&gt; или &lt;/&gt;&lt;link https://green-api.com/docs/api/receiving/technology-webhook-endpoint/&gt;Webhook &lt;/&gt;&lt;link https://green-api.com/v3/docs/api/receiving/technology-webhook-endpoint/&gt;Endpoint&lt;/&gt;</v8:content>
+																			<v8:content>&lt;color #536AC2&gt;Входящие уведомления позволяют получать сообщения, изображения, видео, файлы, статусы ранее отправленных сообщений, а также информацию о состоянии аккаунта и телефона. Подробнее см. в документации для &lt;/&gt;&lt;link https://green-api.com/v3/docs/api/receiving/technology-http-api/&gt;HTTP&lt;/&gt;&lt;link https://green-api.com/docs/api/receiving/technology-http-api/&gt; API&lt;/&gt;&lt;color #536AC2&gt; или &lt;/&gt;&lt;link https://green-api.com/docs/api/receiving/technology-webhook-endpoint/&gt;Webhook &lt;/&gt;&lt;link https://green-api.com/v3/docs/api/receiving/technology-webhook-endpoint/&gt;Endpoint&lt;/&gt;</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ContextMenu name="Декорация1КонтекстноеМеню" id="1068"/>
@@ -852,7 +848,6 @@
 															<HorizontalAlign>Left</HorizontalAlign>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<HorizontalStretch>true</HorizontalStretch>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<EditFormat>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -871,7 +866,6 @@
 																	<v8:content>Код авторизации</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_codeКонтекстноеМеню" id="1014"/>
 															<ExtendedTooltip name="Параметр_codeРасширеннаяПодсказка" id="1015"/>
 														</InputField>
@@ -2117,7 +2111,6 @@
 															</Title>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<HorizontalStretch>true</HorizontalStretch>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="ИнтервалКонтекстноеМеню" id="1106"/>
 															<ExtendedTooltip name="ИнтервалРасширеннаяПодсказка" id="1107"/>
 														</InputField>
@@ -2165,7 +2158,6 @@
 															<DataPath>КоличествоСообщений</DataPath>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<HorizontalStretch>true</HorizontalStretch>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="КоличествоСообщенийКонтекстноеМеню" id="1109"/>
 															<ExtendedTooltip name="КоличествоСообщенийРасширеннаяПодсказка" id="1110"/>
 														</InputField>
@@ -2179,7 +2171,6 @@
 														</Button>
 														<InputField name="Параметр_idMessage2" id="1111">
 															<DataPath>Параметр_idMessage</DataPath>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_idMessage2КонтекстноеМеню" id="1112"/>
 															<ExtendedTooltip name="Параметр_idMessage2РасширеннаяПодсказка" id="1113"/>
 														</InputField>
@@ -2638,7 +2629,6 @@
 																	<v8:content>Имя группы</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_groupNameКонтекстноеМеню" id="1002"/>
 															<ExtendedTooltip name="Параметр_groupNameРасширеннаяПодсказка" id="1003"/>
 														</InputField>
@@ -2651,7 +2641,6 @@
 																</v8:item>
 															</Title>
 															<ChoiceButton>true</ChoiceButton>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_chatIdsКонтекстноеМеню" id="1011"/>
 															<ExtendedTooltip name="Параметр_chatIdsРасширеннаяПодсказка" id="1012"/>
 														</InputField>
@@ -2671,7 +2660,6 @@
 																	<v8:content>ID группы</v8:content>
 																</v8:item>
 															</Title>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_chatIdКонтекстноеМеню" id="1005"/>
 															<ExtendedTooltip name="Параметр_chatIdРасширеннаяПодсказка" id="1006"/>
 														</InputField>
@@ -2709,7 +2697,6 @@
 														</Button>
 														<InputField name="Параметр_participantChatId" id="1007">
 															<DataPath>Параметр_participantChatId</DataPath>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="Параметр_participantChatIdКонтекстноеМеню" id="1008"/>
 															<ExtendedTooltip name="Параметр_participantChatIdРасширеннаяПодсказка" id="1009"/>
 														</InputField>
@@ -3181,7 +3168,6 @@
 																					<v8:content>ID сообщения</v8:content>
 																				</v8:item>
 																			</Title>
-																			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																			<ContextMenu name="Параметр_idMessage1КонтекстноеМеню" id="979"/>
 																			<ExtendedTooltip name="Параметр_idMessage1РасширеннаяПодсказка" id="980"/>
 																		</InputField>
@@ -3443,7 +3429,6 @@
 																	<HorizontalAlign>Left</HorizontalAlign>
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<HorizontalStretch>true</HorizontalStretch>
-																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<EditFormat>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -3482,7 +3467,6 @@
 																			<v8:content>ID сообщения</v8:content>
 																		</v8:item>
 																	</Title>
-																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="Параметр_idMessageКонтекстноеМеню" id="928"/>
 																	<ExtendedTooltip name="Параметр_idMessageРасширеннаяПодсказка" id="929"/>
 																</InputField>
